@@ -7,7 +7,7 @@ const App = () => {
     <div className='pt-6 pb-3'>
       <div className='container'>
         <Routes>
-          <Route path='/test-task/' element={<Table />} />
+          <Route path='/' element={<Table />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
