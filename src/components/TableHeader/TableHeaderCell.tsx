@@ -6,26 +6,23 @@ import { AppDispatch } from '../../store/store';
 import { setPage } from '../../slices/postsSlice';
 import { useSearchParams } from 'react-router-dom';
 
-interface TableHeaderCell extends TableCellProps {
-  isFilterNeeded?: boolean;
+interface TableHeaderCellProps extends TableCellProps {
+  value: string;
 }
-
-export const TableHeaderCell: FC<TableHeaderCell> = ({ style, text, isFilterNeeded }) => {
+export const TableHeaderCell: FC<TableHeaderCellProps> = ({ style, text, value }) => {
   const dispatch = useDispatch<AppDispatch>();
   const [searchParams, setSearchParams] = useSearchParams();
 
   const handleClick = () => {
     // Если фильтр нужен, то выполняется проверка на фильтр и выполненеие нужной функции.
-    if (isFilterNeeded) {
-      if (!searchParams.has('_sort')) {
-        searchParams.append('_sort', 'title');
-        setSearchParams(searchParams);
-        dispatch(setPage(1));
-        return;
-      }
-      searchParams.delete('_sort');
+    if (!searchParams.has('_sort')) {
+      searchParams.append('_sort', value);
       setSearchParams(searchParams);
+      dispatch(setPage(1));
+      return;
     }
+    searchParams.delete('_sort');
+    setSearchParams(searchParams);
   };
 
   return (

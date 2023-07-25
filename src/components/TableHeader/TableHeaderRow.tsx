@@ -4,9 +4,9 @@ import { TableHeaderCell } from './TableHeaderCell';
 export const TableHeaderRow = ({}) => {
   return (
     <div className={styles.row}>
-      <TableHeaderCell text='id' style={`id-default ${styles.id}`} />
-      <TableHeaderCell text='Заголовок' style={`title-default ${styles.title}`} isFilterNeeded={true} />
-      <TableHeaderCell text='Описание' style={styles.description} />
+      <TableHeaderCell text='id' style={`id-default ${styles.id}`} value='id' />
+      <TableHeaderCell text='Заголовок' style={`title-default ${styles.title}`} value='title' />
+      <TableHeaderCell text='Описание' style={styles.description} value='body' />
     </div>
   );
 };
