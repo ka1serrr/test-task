@@ -1,0 +1,11 @@
+.pagination {
+  @apply flex justify-center;
+}
+
+.paginationButton {
+  @apply mr-4 text-main-gray text-base sm:text-[18px] font-bold italic
+}
+
+.active {
+  @apply text-active
+}

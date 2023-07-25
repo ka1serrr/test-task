@@ -1,0 +1,19 @@
+.tableHeader {
+  @apply h-[54px] w-full bg-header-gray
+}
+
+.row {
+  @apply flex items-center
+} 
+
+.id {
+  @apply text-[14px] text-main-white h-[54px] uppercase px-6  min-w-[110px] 
+}
+
+.title {
+  @apply text-[14px] text-main-white  h-[54px] cursor-pointer min-w-[110px] 
+}
+
+.description {
+  @apply max-w-description w-full h-[54px] text-main-white text-[14px] min-w-[110px]
+}

@@ -1,0 +1,7 @@
+.form {
+  @apply mb-4 max-w-[631px] w-full bg-search-gray h-[52px] flex items-center justify-between px-[26px] 
+}
+
+.input {
+  @apply bg-transparent border-0 focus-visible:outline-none placeholder:text-search-gray placeholder:text-sm text-search-gray text-sm max-w-[530px] w-full
+}

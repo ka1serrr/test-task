@@ -1,0 +1,15 @@
+.row {
+  @apply flex items-center
+}
+
+.id {
+  @apply max-w-id w-full text-[13px] text-main-gray flex justify-center items-center h-[70px] sm:h-cell py-[5px] sm:py-[10px] sm:px-2 px-1 border border-main-gray   
+};
+
+.title {
+  @apply max-w-title w-full text-[13px] text-main-gray h-[70px] sm:h-cell py-[5px] sm:py-[10px] px-1 sm:px-2 border border-main-gray 
+};
+
+.description {
+  @apply max-w-description w-full text-[13px] text-main-gray h-[70px] sm:h-cell py-[5px] sm:py-[10px] px-1 sm:px-2 border border-main-gray 
+}; 

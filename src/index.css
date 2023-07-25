@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-roboto;
+}
+
+.container {
+  @apply max-w-[1077px] w-full my-0 mx-auto bg-main-white;
+}
+
+.id-default {
+  @apply max-w-id w-full flex justify-center items-center;
+}
+
+.title-default {
+  @apply max-w-title w-full;
+}
